@@ -9,3 +9,14 @@ mkfs.ext4 /dev/xvdb    #make file system
 mount /dev/xvdb/test    mount the dir
 mountpoint /test   # to check mountpoint
 umount      # to unmount
+
+file -s /dev/xvdh  # to check file fomrmated or not and mkfs
+create a directory 
+mkdir /data
+mount /dev/xvdh /data
+cd data
+ls
+ you access the old data
+ #################### increase the sixe of ebs volume ##########
+ resize2fs /dev/xvdh   # command for resize ebs we can not decrease the size of ebs
+ 
