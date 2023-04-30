@@ -1,0 +1,11 @@
+########### commands for ebs-volume#############
+you have to completelt attacj the volume to instances
+then 
+lsblk  # to show the how many volumes are attached to ec2
+########### create directory ############
+mkdir test
+touch 1 2 3 4 5 6    ### creating some file 
+mkfs.ext4 /dev/xvdb    #make file system
+mount /dev/xvdb/test    mount the dir
+mountpoint /test   # to check mountpoint
+umount      # to unmount
