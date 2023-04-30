@@ -20,3 +20,9 @@ ls
  #################### increase the sixe of ebs volume ##########
  resize2fs /dev/xvdh   # command for resize ebs we can not decrease the size of ebs
  
+ ############ increase root volume size ###########
+ file -s /dev/xvda1
+ resize2f /dev/xvda1
+ growpart /dev/xvda1
+ 
+ 
